@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    cursor: none; 
+    overflow-x: hidden;
+    transition: overflow-y 0.3s;
+    background-color: #F2F0EF;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+.text-white {
+    color: #F2F0EF !important;
+}
+
+.border-white {
+    border-color: #F2F0EF !important;
+}
+
+#mobile-menu-close {
+    color: #F2F0EF !important;
+}
+
+#custom-cursor {
+    border-color: #F2F0EF !important;
+    mix-blend-mode: difference; /* Keeps it visible on light/dark elements */
+}
+
+/* Project Detail */
+.detail-content h3 {
+    font-weight: 700;
+    margin-top: 1rem;
+    color: #ccc;
+}
+
+.detail-content p a {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #F2F0EF;
+}
+
+
+.detail-content img,
+.detail-content video,
+.detail-content iframe {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-top: 24px;
+    border-radius: 6px;
+}
+
+
+.project-item.active .project-title {
+    color: #F2F0EF !important;
+}
+
+
+@media (max-width: 768px) {
+    /* Override Tailwind sticky on mobile for the project list to allow full scroll */
+    .md\:sticky {
+        position: relative !important;
+        height: auto !important;
+        overflow-y: visible !important;
+    }
+    .project-title {
+        font-size: 2rem;
+    }
+    .project-item p {
+        font-size: 1rem;
+    }
+    .detail-content {
+        font-size: 1rem;
+    }
+}

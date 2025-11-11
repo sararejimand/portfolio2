@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Rejimand - Front-End & UI/UX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css"> 
+    <script src="portfolio.js"></script>
+
+</head>
+
+<body class="bg-black text-white antialiased">
+
+    
+    <canvas id="interactive-bg" class="fixed top-0 left-0 w-full h-full opacity-70"></canvas>
+
+    <div id="custom-cursor" class="fixed pointer-events-none rounded-full border-2 border-white w-8 h-8 opacity-0 transition-opacity duration-300 z-[10000] mix-blend-difference"></div>
+    
+
+    <header class="fixed top-0 left-0 w-full p-6 md:p-10 z-50">
+        <nav class="flex justify-between items-center">
+            <h1 class="text-xl font-extrabold tracking-widest uppercase">SARA R.</h1>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#projects" class="hover:text-gray-400 transition">Projets</a>
+                <a href="#about" class="hover:text-gray-400 transition">À Propos</a>
+                <a href="#contact" class="hover:text-gray-400 transition">Contact</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-2xl z-50">☰</button>
+        </nav>
+    </header>
+
+
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black z-[999] flex flex-col justify-center items-center text-3xl font-bold transform -translate-x-full transition-transform duration-500">
+        <button id="mobile-menu-close" class="absolute top-10 right-10 text-4xl">×</button>
+        <a href="#projects" class="p-4 hover:text-gray-400" data-section="projects">Projets</a>
+        <a href="#about" class="p-4 hover:text-gray-400" data-section="about">À Propos</a>
+        <a href="#contact" class="p-4 hover:text-gray-400" data-section="contact">Contact</a>
+    </div>
+
+
+    <main id="main-content" class="relative page-content min-h-screen">
+        
+        <section id="hero" class="h-screen flex flex-col justify-center items-start p-6 md:p-20 relative">
+            <p class="text-lg md:text-xl font-light mb-4 text-gray-400 opacity-0" id="hero-subtitle">
+                Développeuse Front-End & UI/UX Designer basée à Bordeaux.
+            </p>
+            <div class="overflow-hidden">
+                <h2 id="hero-title" class="text-7xl md:text-9xl font-extrabold uppercase leading-none text-white transition duration-500 opacity-0 transform translate-y-full">
+                    SARA<br>
+                    REJIMAND
+                </h2>
+            </div>
+            <a href="#projects" class="mt-12 text-lg font-medium border-b border-white hover:text-gray-400 transition duration-300 opacity-0" id="hero-cta">
+                Voir les Projets &darr;
+            </a>
+        </section>
+
+
+        <section id="projects" class="min-h-screen py-16 md:py-24 relative flex flex-col md:flex-row">
+            
+
+            <div class="md:w-1/2 w-full px-6 md:px-20 md:sticky md:top-0 md:h-screen md:overflow-y-auto">
+                <h3 class="text-5xl md:text-6xl font-extrabold uppercase mb-12 border-b border-white pb-4">Projets</h3>
+                
+                <div id="project-list" class="space-y-12">
+                    
+
+                    <h4 class="text-2xl font-extrabold uppercase mb-4 text-gray-400 border-b border-gray-800 pb-2 pt-8">
+                        Développement & Design (UI/UX)
+                    </h4>
+                    <div id="dev-ui-ux-list" class="space-y-20">
+
+                    </div>
+
+                    <h4 class="text-2xl font-extrabold uppercase mb-4 text-gray-400 border-b border-gray-800 pb-2 pt-16">
+                        Autres Projets (Graphisme, Motion, Video)
+                    </h4>
+                    <div id="other-media-list" class="space-y-20">
+                    </div>
+                    
+                    <div class="h-[50vh]"></div> 
+                </div>
+            </div>
+
+
+            <div class="md:w-1/2 w-full md:sticky md:top-0 h-[50vh] md:h-screen flex justify-center items-center p-6 md:p-10">
+                <div id="project-preview-container" class="w-full h-full relative rounded-lg overflow-hidden shadow-2xl">
+                    <img id="project-preview-image" src="" alt="Project Preview" 
+                         class="absolute inset-0 w-full h-full object-cover grayscale transition-opacity duration-700 opacity-0"
+                         onerror="this.onerror=null; this.src='https://placehold.co/1200x800/222222/FFFFFF?text=Preview';" >
+                    
+                    <div id="initial-placeholder" class="absolute inset-0 flex flex-col justify-center items-center bg-gray-900 transition-opacity duration-700">
+                        <p class="text-xl md:text-3xl font-bold tracking-wider uppercase text-gray-500">
+                            Cliquez un Projet pour les Détails
+                        </p>
+                        <p class="text-sm mt-2 text-gray-700 hidden md:block">
+                            (Scroll pour le survol d'image)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+
+        <section id="about" class="min-h-screen flex justify-center items-center bg-white text-black py-20 relative">
+            <div class="max-w-4xl mx-auto p-6 md:p-10">
+                <h3 class="text-6xl md:text-8xl font-extrabold uppercase mb-16 text-center">À Propos</h3>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+
+                    <div>
+                        <p class="text-xl leading-relaxed mb-6 font-medium">
+                            Je suis Sara Rejimand. Mon parcours atypique, qui m'a menée de la musique iranienne à l'ingénierie web, a forgé ma double approche : une rigueur technique et un sens aigu de l'harmonie. Cette double compétence me permet de concevoir des interfaces à la fois performantes et dotées d'une esthétique forte.
+                        </p>
+                        <p class="text-xl leading-relaxed font-light">
+                            En tant que Développeuse Front-End et Designer UI/UX, je crois que la technologie doit servir la clarté. Je suis spécialisée en HTML, CSS (Tailwind, SCSS) et JavaScript/React, et je suis constamment en quête de projets collaboratifs qui exigent à la fois précision, créativité et une expérience utilisateur sans faille.
+                        </p>
+                    </div>
+                    
+
+                    <div>
+                        <h4 class="text-3xl font-bold mb-6 uppercase">Compétences Clés</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-center space-x-3 text-lg">
+                                <span class="w-2 h-2 rounded-full bg-black"></span>
+                                <span>HTML, CSS (SCSS, Tailwind)</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-lg">
+                                <span class="w-2 h-2 rounded-full bg-black"></span>
+                                <span>JavaScript (ES6+), React</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-lg">
+                                <span class="w-2 h-2 rounded-full bg-black"></span>
+                                <span>UI/UX Design (Figma, Prototypage)</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-lg">
+                                <span class="w-2 h-2 rounded-full bg-black"></span>
+                                <span>Adobe Suite (Photoshop, Illustrator)</span>
+                            </li>
+                        </ul>
+                        
+                        <a href="https://drive.google.com/file/d/1tmCWeL-3T1sm21WppABXwkrYrx2nSH4R/view?usp=drive_link" target="_blank" class="mt-8 inline-block px-6 py-3 border-2 border-black text-black text-lg font-medium hover:bg-black hover:text-white transition duration-300 rounded-full">
+                            Mon CV &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="min-h-screen flex flex-col justify-center items-center py-20 relative text-center">
+            <h3 class="text-6xl md:text-6xl font-extrabold uppercase mb-16 max-w-4xl leading-tight">
+                Intéressé(e) par une collaboration ?
+            </h3>
+            
+            <a href="mailto:sararezhimand@gmail.com" 
+               class="contact-link text-3xl md:text-4xl font-bold mb-8 hover:text-gray-400 transition duration-300 flex items-center space-x-4">
+                <span class="text-lg opacity-50">EMAIL:</span>
+                <span>sararezhimand@gmail.com</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sara-rejimand-242b922a5/" target="_blank"
+               class="contact-link text-2xl md:text-3xl font-medium mb-8 hover:text-gray-400 transition duration-300 flex items-center space-x-4">
+                <span class="text-lg opacity-50">LINKEDIN:</span>
+                <span>/sara-rejimand</span>
+            </a>
+
+            <a href="https://github.com/sararejimand" target="_blank"
+               class="contact-link text-2xl md:text-3xl font-medium mb-12 hover:text-gray-400 transition duration-300 flex items-center space-x-4">
+                <span class="text-lg opacity-50">GITHUB:</span>
+                <span>/sararejimand</span>
+            </a>
+
+            <p class="text-sm text-gray-600 mt-20">Portfolio & Design © 2025 Sara Rejimand</p>
+        </section>
+
+    </main>
+    
+    <section id="project-detail-screen" class="fixed inset-0 bg-black z-[9999] transform translate-x-full overflow-y-auto p-6 md:p-16">
+        <div class="max-w-4xl mx-auto">
+            <button onclick="closeProjectDetail()" class="flex items-center space-x-2 text-xl font-medium text-white hover:text-gray-400 transition mb-10">
+                <span class="text-3xl">←</span>
+                <span>Retour aux Projets</span>
+            </button>
+            
+            <h2 id="detail-title" class="text-5xl md:text-7xl font-extrabold uppercase mb-8 border-b border-gray-700 pb-4"></h2>
+            
+            <div id="detail-body" class="detail-content text-lg font-light space-y-8 text-gray-200">
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
