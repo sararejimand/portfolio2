@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error loading the project data:', error);
         });
         
-    // --- 2. CUSTOM CURSOR & HERO ANIMATION ---
+    // --- CURSOR ---
     const customCursor = document.getElementById('custom-cursor');
     let mouseX = 0, mouseY = 0;
     let cursorSize = 32;
@@ -188,114 +188,64 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-// --- 3. CUSTOM INTERACTIVE CANVAS BACKGROUND (Connecting Dots Network) ---
-    
-    const canvas = document.getElementById('interactive-bg');
-    const ctx = canvas.getContext('2d');
-    let width, height;
-    let mousePos = { x: 0, y: 0 };
-    
-    const particleCount = 100; // Reduced count for performance and minimalism
-    const particles = [];
-    const maxDistance = 120; // Max distance for lines to connect
-    const mouseRadius = 150; // Radius for mouse repulsion
+    // --- CANVAS BACKGROUND (Subtle Geometric Noise Grid) ---
+(function () {
+    const canvas = document.getElementById('tf-noise');
+    const ctx = canvas.getContext('2d', { alpha: true });
+    let width, height, frameId;
 
-    class Particle {
-        constructor() {
-            this.x = Math.random() * width;
-            this.y = Math.random() * height;
-            this.vx = (Math.random() - 0.5) * 0.2; // Slower velocity
-            this.vy = (Math.random() - 0.5) * 0.2;
-            this.radius = 1;
-        }
-        
-        update() {
-            // Apply velocity
-            this.x += this.vx;
-            this.y += this.vy;
-
-            // Boundary wrap
-            if (this.x < 0 || this.x > width) this.vx *= -1;
-            if (this.y < 0 || this.y > height) this.vy *= -1;
-            
-            this.x = (this.x + width) % width;
-            this.y = (this.y + height) % height;
-            
-            // Mouse Repulsion
-            const dx = mousePos.x - this.x;
-            const dy = mousePos.y - this.y;
-            const dist = Math.sqrt(dx * dx + dy * dy);
-            
-            if (dist < mouseRadius) {
-                const angle = Math.atan2(dy, dx);
-                const force = (mouseRadius - dist) / mouseRadius * 0.05; // Gentle repulsion
-                this.x -= Math.cos(angle) * force * 10;
-                this.y -= Math.sin(angle) * force * 10;
-            }
-        }
-        
-        draw() {
-            ctx.fillStyle = `rgba(255, 255, 255, 0.5)`; // Subtle white particles
-            ctx.beginPath();
-            ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-            ctx.fill();
-        }
+    function resize() {
+      width = canvas.clientWidth;
+      height = canvas.clientHeight;
+      canvas.width = Math.round(width);
+      canvas.height = Math.round(height);
     }
 
-    function connectParticles() {
-        for (let i = 0; i < particleCount; i++) {
-            for (let j = i + 1; j < particleCount; j++) {
-                const p1 = particles[i];
-                const p2 = particles[j];
-                
-                const dx = p1.x - p2.x;
-                const dy = p1.y - p2.y;
-                const dist = Math.sqrt(dx * dx + dy * dy);
+    function renderNoise() {
+      // Create a small offscreen tile and stamp it for speed
+      const tileSize = 128;
+      const off = document.createElement('canvas');
+      off.width = tileSize;
+      off.height = tileSize;
+      const octx = off.getContext('2d');
 
-                if (dist < maxDistance) {
-                    // Calculate opacity based on distance
-                    const opacity = 1 - (dist / maxDistance);
-                    
-                    ctx.beginPath();
-                    ctx.strokeStyle = `rgba(255, 255, 255, ${opacity * 0.2})`; // Very subtle lines (opacity 0.2)
-                    ctx.lineWidth = 0.5;
-                    ctx.moveTo(p1.x, p1.y);
-                    ctx.lineTo(p2.x, p2.y);
-                    ctx.stroke();
-                }
-            }
+      const imageData = octx.createImageData(tileSize, tileSize);
+      const data = imageData.data;
+      for (let i = 0; i < data.length; i += 4) {
+        const v = 128 + Math.random() * 60; // mid-gray noise
+        data[i] = v;
+        data[i + 1] = v;
+        data[i + 2] = v;
+        data[i + 3] = 40; // alpha controls strength; tuned by CSS opacity
+      }
+      octx.putImageData(imageData, 0, 0);
+
+      // Fill the main canvas with the noise tile
+      const cols = Math.ceil(width / tileSize);
+      const rows = Math.ceil(height / tileSize);
+      for (let y = 0; y < rows; y++) {
+        for (let x = 0; x < cols; x++) {
+          ctx.drawImage(off, x * tileSize, y * tileSize);
         }
+      }
     }
 
-    function setup() {
-        width = canvas.width = window.innerWidth;
-        height = canvas.height = window.innerHeight;
-        particles.length = 0;
-        for (let i = 0; i < particleCount; i++) {
-            particles.push(new Particle());
-        }
-    }
-    
-    function draw() {
-        ctx.clearRect(0, 0, width, height); // Clear frame completely, no trails/ghosting
-        
-        connectParticles();
-        
-        particles.forEach(p => {
-            p.update();
-            p.draw();
-        });
-        
-        requestAnimationFrame(draw);
+    function loop() {
+      // Slightly clear to avoid stacking alpha
+      ctx.clearRect(0, 0, width, height);
+      renderNoise();
+      frameId = requestAnimationFrame(loop);
     }
 
-    window.addEventListener('resize', setup);
-    document.addEventListener('mousemove', (e) => {
-        mousePos.x = e.clientX;
-        mousePos.y = e.clientY;
-    });
+    // Handle DPR changes and resizes
+    window.addEventListener('resize', () => {
+      cancelAnimationFrame(frameId);
+      resize();
+      loop();
+    }, { passive: true });
 
-    // Start the canvas animation
-    setup();
-    draw();
+    resize();
+    loop();
+  })();
+  
 });

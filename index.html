@@ -19,14 +19,22 @@
 
     <div id="custom-cursor" class="fixed pointer-events-none rounded-full border-2 border-white w-8 h-8 opacity-0 transition-opacity duration-300 z-[10000] mix-blend-difference"></div>
     
+    <div class="tf-bg">
+  <canvas id="tf-noise"></canvas>
+  <div class="tf-gradient"></div>
+  <div class="tf-blob tf-blob-1"></div>
+  <div class="tf-blob tf-blob-2"></div>
+  <div class="tf-blob tf-blob-3"></div>
+</div>
+
 
     <header class="fixed top-0 left-0 w-full p-6 md:p-10 z-50">
         <nav class="flex justify-between items-center">
             <h1 class="text-xl font-extrabold tracking-widest uppercase">SARA R.</h1>
-            <div class="hidden md:flex space-x-8 text-sm font-medium">
-                <a href="#projects" class="hover:text-gray-400 transition">Projets</a>
-                <a href="#about" class="hover:text-gray-400 transition">À Propos</a>
-                <a href="#contact" class="hover:text-gray-400 transition">Contact</a>
+            <div class="hidden md:flex space-x-8 text-lg font-medium">
+                <a href="#projects" class="hover:text-zinc-400 transition">Projets</a>
+                <a href="#about" class="hover:text-zinc-400 transition">À Propos</a>
+                <a href="#contact" class="hover:text-zinc-400 transition">Contact</a>
             </div>
 
             <button id="mobile-menu-btn" class="md:hidden text-2xl z-50">☰</button>
@@ -36,16 +44,16 @@
 
     <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black z-[999] flex flex-col justify-center items-center text-3xl font-bold transform -translate-x-full transition-transform duration-500">
         <button id="mobile-menu-close" class="absolute top-10 right-10 text-4xl">×</button>
-        <a href="#projects" class="p-4 hover:text-gray-400" data-section="projects">Projets</a>
-        <a href="#about" class="p-4 hover:text-gray-400" data-section="about">À Propos</a>
-        <a href="#contact" class="p-4 hover:text-gray-400" data-section="contact">Contact</a>
+        <a href="#projects" class="p-4 hover:text-zinc-400" data-section="projects">Projets</a>
+        <a href="#about" class="p-4 hover:text-zinc-400" data-section="about">À Propos</a>
+        <a href="#contact" class="p-4 hover:text-zinc-400" data-section="contact">Contact</a>
     </div>
 
 
     <main id="main-content" class="relative page-content min-h-screen">
         
         <section id="hero" class="h-screen flex flex-col justify-center items-start p-6 md:p-20 relative">
-            <p class="text-lg md:text-xl font-light mb-4 text-gray-400 opacity-0" id="hero-subtitle">
+            <p class="text-lg md:text-xl font-light mb-4 text-zinc-400 opacity-0" id="hero-subtitle">
                 Développeuse Front-End & UI/UX Designer basée à Bordeaux.
             </p>
             <div class="overflow-hidden">
@@ -54,7 +62,7 @@
                     REJIMAND
                 </h2>
             </div>
-            <a href="#projects" class="mt-12 text-lg font-medium border-b border-white hover:text-gray-400 transition duration-300 opacity-0" id="hero-cta">
+            <a href="#projects" class="mt-12 text-lg font-medium border-b border-white hover:text-zinc-400 transition duration-300 opacity-0" id="hero-cta">
                 Voir les Projets &darr;
             </a>
         </section>
@@ -69,14 +77,14 @@
                 <div id="project-list" class="space-y-12">
                     
 
-                    <h4 class="text-2xl font-extrabold uppercase mb-4 text-gray-400 border-b border-gray-800 pb-2 pt-8">
+                    <h4 class="text-2xl font-extrabold uppercase mb-4 text-zinc-400 border-b border-gray-800 pb-2 pt-8">
                         Développement & Design (UI/UX)
                     </h4>
                     <div id="dev-ui-ux-list" class="space-y-20">
 
                     </div>
 
-                    <h4 class="text-2xl font-extrabold uppercase mb-4 text-gray-400 border-b border-gray-800 pb-2 pt-16">
+                    <h4 class="text-2xl font-extrabold uppercase mb-4 text-zinc-400 border-b border-gray-800 pb-2 pt-16">
                         Autres Projets (Graphisme, Motion, Video)
                     </h4>
                     <div id="other-media-list" class="space-y-20">
@@ -90,14 +98,13 @@
             <div class="md:w-1/2 w-full md:sticky md:top-0 h-[50vh] md:h-screen flex justify-center items-center p-6 md:p-10">
                 <div id="project-preview-container" class="w-full h-full relative rounded-lg overflow-hidden shadow-2xl">
                     <img id="project-preview-image" src="" alt="Project Preview" 
-                         class="absolute inset-0 w-full h-full object-cover grayscale transition-opacity duration-700 opacity-0"
-                         onerror="this.onerror=null; this.src='https://placehold.co/1200x800/222222/FFFFFF?text=Preview';" >
+                         class="absolute inset-0 w-full h-full object-cover grayscale transition-opacity duration-700 opacity-0">
                     
-                    <div id="initial-placeholder" class="absolute inset-0 flex flex-col justify-center items-center bg-gray-900 transition-opacity duration-700">
-                        <p class="text-xl md:text-3xl font-bold tracking-wider uppercase text-gray-500">
+                    <div id="initial-placeholder" class="absolute inset-0 flex flex-col justify-center items-center bg-zinc-900 transition-opacity duration-700">
+                        <p class="text-xl md:text-3xl font-bold tracking-wider uppercase text-zinc-500">
                             Cliquez un Projet pour les Détails
                         </p>
-                        <p class="text-sm mt-2 text-gray-700 hidden md:block">
+                        <p class="text-sm mt-2 text-zinc-700 hidden md:block">
                             (Scroll pour le survol d'image)
                         </p>
                     </div>
@@ -118,7 +125,7 @@
                             Je suis Sara Rejimand. Mon parcours atypique, qui m'a menée de la musique iranienne à l'ingénierie web, a forgé ma double approche : une rigueur technique et un sens aigu de l'harmonie. Cette double compétence me permet de concevoir des interfaces à la fois performantes et dotées d'une esthétique forte.
                         </p>
                         <p class="text-xl leading-relaxed font-light">
-                            En tant que Développeuse Front-End et Designer UI/UX, je crois que la technologie doit servir la clarté. Je suis spécialisée en HTML, CSS (Tailwind, SCSS) et JavaScript/React, et je suis constamment en quête de projets collaboratifs qui exigent à la fois précision, créativité et une expérience utilisateur sans faille.
+                            En tant que Développeuse Front-End et Designer UI/UX, je crois que la technologie doit servir la clarté. Je suis spécialisée en HTML, CSS, JavaScript et React, et je suis constamment en quête de projets collaboratifs qui exigent à la fois précision, créativité et une expérience utilisateur sans faille.
                         </p>
                     </div>
                     
@@ -128,11 +135,15 @@
                         <ul class="space-y-4">
                             <li class="flex items-center space-x-3 text-lg">
                                 <span class="w-2 h-2 rounded-full bg-black"></span>
-                                <span>HTML, CSS (SCSS, Tailwind)</span>
+                                <span>HTML, CSS (SCSS, Tailwind, Bootstrap)</span>
                             </li>
                             <li class="flex items-center space-x-3 text-lg">
                                 <span class="w-2 h-2 rounded-full bg-black"></span>
-                                <span>JavaScript (ES6+), React</span>
+                                <span>JavaScript, React</span>
+                            </li>
+                                <li class="flex items-center space-x-3 text-lg">
+                                <span class="w-2 h-2 rounded-full bg-black"></span>
+                                <span>PHP, Laravel, MySQL</span>
                             </li>
                             <li class="flex items-center space-x-3 text-lg">
                                 <span class="w-2 h-2 rounded-full bg-black"></span>
@@ -140,7 +151,7 @@
                             </li>
                             <li class="flex items-center space-x-3 text-lg">
                                 <span class="w-2 h-2 rounded-full bg-black"></span>
-                                <span>Adobe Suite (Photoshop, Illustrator)</span>
+                                <span>Adobe Suite (Photoshop, Illustrator, etc)</span>
                             </li>
                         </ul>
                         
@@ -159,38 +170,38 @@
             </h3>
             
             <a href="mailto:sararezhimand@gmail.com" 
-               class="contact-link text-3xl md:text-4xl font-bold mb-8 hover:text-gray-400 transition duration-300 flex items-center space-x-4">
+               class="contact-link text-3xl md:text-4xl font-bold mb-8 hover:text-zinc-400 transition duration-300 flex items-center space-x-4">
                 <span class="text-lg opacity-50">EMAIL:</span>
                 <span>sararezhimand@gmail.com</span>
             </a>
 
             <a href="https://www.linkedin.com/in/sara-rejimand-242b922a5/" target="_blank"
-               class="contact-link text-2xl md:text-3xl font-medium mb-8 hover:text-gray-400 transition duration-300 flex items-center space-x-4">
+               class="contact-link text-2xl md:text-3xl font-medium mb-8 hover:text-zinc-400 transition duration-300 flex items-center space-x-4">
                 <span class="text-lg opacity-50">LINKEDIN:</span>
                 <span>/sara-rejimand</span>
             </a>
 
             <a href="https://github.com/sararejimand" target="_blank"
-               class="contact-link text-2xl md:text-3xl font-medium mb-12 hover:text-gray-400 transition duration-300 flex items-center space-x-4">
+               class="contact-link text-2xl md:text-3xl font-medium mb-12 hover:text-zinc-400 transition duration-300 flex items-center space-x-4">
                 <span class="text-lg opacity-50">GITHUB:</span>
                 <span>/sararejimand</span>
             </a>
 
-            <p class="text-sm text-gray-600 mt-20">Portfolio & Design © 2025 Sara Rejimand</p>
+            <p class="text-sm text-zinc-400 mt-20">Portfolio & Design © 2025 Sara Rejimand</p>
         </section>
 
     </main>
     
     <section id="project-detail-screen" class="fixed inset-0 bg-black z-[9999] transform translate-x-full overflow-y-auto p-6 md:p-16">
         <div class="max-w-4xl mx-auto">
-            <button onclick="closeProjectDetail()" class="flex items-center space-x-2 text-xl font-medium text-white hover:text-gray-400 transition mb-10">
+            <button onclick="closeProjectDetail()" class="flex items-center space-x-2 text-xl font-medium text-white hover:text-zinc-400 transition mb-10">
                 <span class="text-3xl">←</span>
                 <span>Retour aux Projets</span>
             </button>
             
             <h2 id="detail-title" class="text-5xl md:text-7xl font-extrabold uppercase mb-8 border-b border-gray-700 pb-4"></h2>
             
-            <div id="detail-body" class="detail-content text-lg font-light space-y-8 text-gray-200">
+            <div id="detail-body" class="detail-content text-lg font-light space-y-8 text-zinc-200">
             </div>
         </div>
     </section>

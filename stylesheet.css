@@ -18,12 +18,15 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #555;
+    background: #717896;
     border-radius: 10px;
 }
 
+#projects ::-webkit-scrollbar-thumb {
+    background: #939292;
+}
 ::-webkit-scrollbar-thumb:hover {
-    background: #999;
+    background: #939292;
 }
 
 .text-white {
@@ -40,7 +43,7 @@ body {
 
 #custom-cursor {
     border-color: #F2F0EF !important;
-    mix-blend-mode: difference; /* Keeps it visible on light/dark elements */
+    mix-blend-mode: difference; 
 }
 
 /* Project Detail */
@@ -69,12 +72,16 @@ body {
 
 
 .project-item.active .project-title {
-    color: #F2F0EF !important;
+    color: #F2F0EF ;
 }
 
-
+h4.project-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #c1c0c0;
+    transition: color 0.3s;
+}
 @media (max-width: 768px) {
-    /* Override Tailwind sticky on mobile for the project list to allow full scroll */
     .md\:sticky {
         position: relative !important;
         height: auto !important;
@@ -89,4 +96,79 @@ body {
     .detail-content {
         font-size: 1rem;
     }
+
+    #custom-cursor {
+        display: none;
+    }
+}
+
+.tf-bg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1; 
+  background: linear-gradient(180deg, #0b0b0b 0%, #111 40%, #0d0d0d 100%);
+}
+
+#tf-noise {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.06;              
+  mix-blend-mode: soft-light;  
+  pointer-events: none;
+}
+
+
+.tf-gradient {
+  position: absolute;
+  inset: -20% -10%;
+  background:
+    radial-gradient(1200px 600px at 10% 10%, rgba(255,255,255,0.06), transparent 60%),
+    radial-gradient(900px 900px at 80% 20%, rgba(160,160,180,0.08), transparent 65%),
+    radial-gradient(700px 700px at 50% 80%, rgba(151, 145, 171, 0.055), transparent 70%);
+  filter: blur(24px);
+  transform: translateZ(0);
+}
+
+.tf-blob {
+  position: absolute;
+  width: 55vmax;
+  height: 55vmax;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.18;
+  mix-blend-mode: screen;
+  will-change: transform, opacity;
+}
+
+.tf-blob-1 { background: radial-gradient(circle, rgba(180, 188, 200, 0.125), rgba(180, 190, 200, 0)); }
+.tf-blob-2 { background: radial-gradient(circle, #788aa055, rgba(120, 140, 160, 0)); }
+.tf-blob-3 { background: radial-gradient(circle, rgba(14, 29, 106, 0.237), rgba(90, 107, 130, 0)); }
+
+.tf-blob-1 { top: -10vmax; left: -10vmax; animation: drift1 6s ease-in-out infinite alternate; }
+.tf-blob-2 { bottom: -15vmax; right: -20vmax; animation: drift2 4s ease-in-out infinite alternate; }
+.tf-blob-3 { top: 30%; left: 60%; animation: drift3 2s ease-in-out infinite alternate; }
+
+@keyframes drift1 {
+  0%   { transform: translate3d(0, 0, 0) scale(1); opacity: 0.16; }
+  50%  { transform: translate3d(8vmax, 6vmax, 0) scale(1.08); opacity: 2.22; }
+  100% { transform: translate3d(12vmax, -4vmax, 0) scale(0.98); opacity: 4.18; }
+}
+@keyframes drift2 {
+  0%   { transform: translate3d(0, 0, 0) scale(1.1); opacity: 0.14; }
+  50%  { transform: translate3d(-6vmax, -4vmax, 0) scale(1.03); opacity: 1.19; }
+  100% { transform: translate3d(4vmax, 6vmax, 0) scale(0.95); opacity: 2.17; }
+}
+@keyframes drift3 {
+  0%   { transform: translate3d(0, 0, 0) scale(0.95); opacity: 0.15; }
+  50%  { transform: translate3d(-5vmax, 5vmax, 0) scale(1.05); opacity: 1.21; }
+  100% { transform: translate3d(10vmax, -6vmax, 0) scale(1.0);  opacity: 3.18; }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: #eaeaea;
 }
