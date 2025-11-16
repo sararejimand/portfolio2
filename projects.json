@@ -11,48 +11,57 @@
         "id": "capc-redesign",
         "category": "dev-ui-ux",
         "title": "CAPC Refonte", 
-        "image": "https://placehold.co/1200x800/222222/FFFFFF?text=CAPC+Museum+Refonte",
+        "image": "images/project/CAPC-cover.png",
         "summary": "Refonte UI/UX, JavaScript, HTML/CSS - Optimisation de l'Expérience Utilisateur",
-        "content": "<p><strong>Défi:</strong> Moderniser le site du Musée CAPC Bordeaux, célèbre pour son design brutaliste, en améliorant l'expérience utilisateur (UX) sans trahir son identité artistique forte.</p><p><strong>Solution:</strong> J'ai développé une nouvelle interface utilisateur avec <strong>HTML, CSS et JavaScript</strong>, en ciblant une navigation plus intuitive et des performances optimisées. L'accent a été mis sur la hiérarchie visuelle pour une meilleure clarté du contenu, tout en conservant les éléments graphiques audacieux du style original.</p><p><strong>Résultat:</strong> Un prototype de refonte plus fluide, plus accessible et fidèle à l'esprit du lieu. Ce projet a démontré ma capacité à adapter et améliorer un design existant tout en respectant une charte graphique complexe.</p><p><a href=\"https://capc-museum.netlify.app\" target=\"_blank\">Découvrir le projet en ligne &rarr;</a></p><img src=\"https://placehold.co/1200x800/444444/FFFFFF?text=CAPC+Screenshot+1\" alt=\"CAPC Refonte Screenshot 1\"><img src=\"https://placehold.co/1200x800/555555/FFFFFF?text=CAPC+Screenshot+2\" alt=\"CAPC Refonte Screenshot 2\">"
+        "content": "<p><strong>Défi:</strong> Moderniser le site du Musée CAPC Bordeaux, célèbre pour son design brutaliste, en améliorant l'expérience utilisateur (UX) sans trahir son identité artistique forte.</p><p><strong>Solution:</strong> On a développé une nouvelle interface utilisateur avec <strong>HTML, CSS et JavaScript</strong>, en ciblant une navigation plus intuitive et des performances optimisées. L'accent a été mis sur la hiérarchie visuelle pour une meilleure clarté du contenu, tout en conservant les éléments graphiques audacieux du style original.</p><p><strong>Résultat:</strong> Un prototype de refonte plus fluide, plus accessible et fidèle à l'esprit du lieu. Ce projet a démontré ma capacité à adapter et améliorer un design existant tout en respectant une charte graphique complexe.</p><p><a href=\"https://capc-museum.netlify.app\" target=\"_blank\">Découvrir le projet en ligne &rarr;</a></p><img src=\"images/project/CAPC2.png\" alt=\"CAPC Refonte Screenshot 1\"><img src=\"images/project/CAPC3.png\" alt=\"CAPC Refonte Screenshot 2\">"
     },
     { 
         "id": "celestia-legends",
         "category": "dev-ui-ux",
         "title": "Celestia Legends", 
-        "image": "https://placehold.co/1200x800/333333/FFFFFF?text=Celestia+Legends",
+        "image": "images/project/celestiacover.png",
         "summary": "Projet Personnel React - Exploration des Composants Dynamiques",
-        "content": "<p><strong>Projet:</strong> Première exploration personnelle de l'écosystème <strong>React</strong>. Le concept est un site narratif et interactif où l'utilisateur découvre des légendes d'étoiles au clic.</p><p><strong>Compétences Clés:</strong> Conception d'une structure en composants réutilisables, gestion d'état simple, et application de styles **CSS** pour créer une ambiance mystérieuse (interface sombre, effets visuels doux). Ce projet me sert de terrain de jeu pour apprendre les fondamentaux de React à mon rythme.</p><p><strong>Statut:</strong> En constante évolution, il met en lumière ma capacité d'apprentissage rapide des nouvelles technologies front-end.</p><p><a href=\"https://celestia-legends.netlify.app/\" target=\"_blank\">Découvrir le projet en ligne &rarr;</a></p><img src=\"https://placehold.co/1200x800/666666/FFFFFF?text=Celestia+Screenshot+1\" alt=\"Celestia Legends Screenshot 1\">"
+        "content": "<p><strong>Projet:</strong> Première exploration personnelle de l'écosystème <strong>React</strong>. Le concept est un site narratif et interactif où l'utilisateur découvre des légendes d'étoiles au clic.</p><p><strong>Compétences Clés:</strong> Conception d'une structure en composants réutilisables, gestion d'état simple, et application de styles CSS pour créer une ambiance mystérieuse (interface sombre, effets visuels doux). Ce projet me sert de terrain de jeu pour apprendre les fondamentaux de React à mon rythme.</p><p><strong>Statut:</strong> En constante évolution, il met en lumière ma capacité d'apprentissage rapide des nouvelles technologies front-end.</p><p><a href=\"https://celestia-legends.netlify.app/\" target=\"_blank\">Découvrir le projet en ligne &rarr;</a></p><img src=\"images/project/celestia (1).png\" alt=\"Celestia Legends Screenshot 1\"><img src=\"images/project/celestia (2).png\" alt=\"Celestia Legends Screenshot 1\">"
     },
     { 
         "id": "parfumerie-jinx",
         "category": "dev-ui-ux",
         "title": "Parfumerie Jinx", 
-        "image": "https://placehold.co/1200x800/444444/FFFFFF?text=Parfumerie+Jinx",
+        "image": "images/project/jinxcover.png",
         "summary": "Site E-commerce Complet - HTML, CSS, JavaScript, Design UI/UX",
-        "content": "<p><strong>Défi:</strong> Concevoir et développer une boutique en ligne moderne, de l'identité visuelle à l'intégration front-end.</p><p><strong>Solution:</strong> J'ai développé l'intégralité du site avec <strong>HTML, CSS et JavaScript</strong>. Le processus a inclus la création du design visuel complet (affiches, éléments graphiques) et le développement d'une interface e-commerce fonctionnelle : navigation par catégorie, fiches produits claires et gestion d'un panier simple.</p><p><strong>Résultat:</strong> Un site e-commerce esthétiquement soigné, fluide et intuitif, démontrant mes compétences en développement front-end et ma capacité à livrer des interfaces dynamiques et fonctionnelles, prêtes pour le monde professionnel.</p><img src=\"https://placehold.co/1200x800/777777/FFFFFF?text=Jinx+eCommerce+GIF\" alt=\"Jinx GIF\"><img src=\"https://placehold.co/1200x800/888888/FFFFFF?text=Jinx+Screenshot+1\" alt=\"Jinx Screenshot 1\">"
+        "content": "<p><strong>Défi:</strong> Concevoir et développer une boutique en ligne moderne, de l'identité visuelle à l'intégration front-end.</p><p><strong>Solution:</strong> J'ai développé l'intégralité du site avec <strong>HTML, CSS et JavaScript</strong>. Le processus a inclus la création du design visuel complet (affiches, éléments graphiques) et le développement d'une interface e-commerce fonctionnelle : navigation par catégorie, fiches produits claires et gestion d'un panier simple.</p><p><strong>Résultat:</strong> Un site e-commerce esthétiquement soigné, fluide et intuitif, démontrant mes compétences en développement front-end et ma capacité à livrer des interfaces dynamiques et fonctionnelles, prêtes pour le monde professionnel.</p><img src=\"images/project/jinx.gif\" alt=\"Jinx GIF\"><img src=\"images/project/jinx2.png\" alt=\"Jinx Screenshot 1\">"
     },
     { 
         "id": "handilink",
         "category": "dev-ui-ux",
         "title": "Handilink", 
-        "image": "https://placehold.co/1200x800/555555/FFFFFF?text=Handilink+CMS",
+        "image": "images/project/HandilinkCover.png",
         "summary": "Projet CMS Osuny - Structuration de Contenu Pédagogique",
-        "content": "<p><strong>Défi:</strong> Utiliser le <strong>CMS Osuny</strong> pour créer une plateforme centralisant et valorisant des jeux vidéo conçus pour sensibiliser aux différents handicaps.</p><p><strong>Solution:</strong> En équipe, nous avons utilisé un CMS open source pour structurer le contenu pédagogique. Le travail a porté sur l'architecture de l'information et la création d'une expérience utilisateur accessible et engageante, adaptée à différents publics.</p><p><strong>Résultat:</strong> Un site d'information fonctionnel qui exploite la puissance d'un CMS pour la gestion de contenu éducatif, renforçant mes compétences dans les outils no-code/low-code et la conception centrée sur l'accessibilité.</p><p><a href=\"https://handilink.osuny.site/\" target=\"_blank\">Découvrir le site en ligne &rarr;</a></p><img src=\"https://placehold.co/1200x800/999999/FFFFFF?text=Handilink+Screenshot+1\" alt=\"Handilink Screenshot 1\"><img src=\"https://placehold.co/1200x800/AAAAAA/FFFFFF?text=Handilink+Screenshot+2\" alt=\"Handilink Screenshot 2\">"
+        "content": "<p><strong>Défi:</strong> Utiliser le <strong>CMS Osuny</strong> pour créer une plateforme centralisant et valorisant des jeux vidéo conçus pour sensibiliser aux différents handicaps.</p><p><strong>Solution:</strong> En équipe, nous avons utilisé un CMS open source pour structurer le contenu pédagogique. Le travail a porté sur l'architecture de l'information et la création d'une expérience utilisateur accessible et engageante, adaptée à différents publics.</p><p><strong>Résultat:</strong> Un site d'information fonctionnel qui exploite la puissance d'un CMS pour la gestion de contenu éducatif, renforçant mes compétences dans les outils no-code/low-code et la conception centrée sur l'accessibilité.</p><p><a href=\"https://handilink.osuny.site/\" target=\"_blank\">Découvrir le site en ligne &rarr;</a></p><img src=\"images/project/handilink (2).png\" alt=\"Handilink Screenshot 1\"><img src=\"images/project/handilink (1).png\" alt=\"Handilink Screenshot 2\">"
     },
     { 
         "id": "candy-shop",
         "category": "dev-ui-ux",
         "title": "Candy Shop", 
-        "image": "https://placehold.co/1200x800/666666/FFFFFF?text=Candy+Shop+UI+Design",
+        "image": "images/project/candycover.png",
         "summary": "Prototypage Mobile Figma - Design UI/UX Complet",
-        "content": "<p><strong>Projet:</strong> Conception et prototypage complet d'une application mobile e-commerce pour une boutique de confiseries, réalisé sur <strong>Figma</strong>.</p><p><strong>Compétences Clés:</strong> J'ai géré l'intégralité du processus de design UI/UX, de la création de l'identité visuelle (logo, palette, icônes) à la réalisation d'un **prototype interactif** fidèle à l'expérience utilisateur réelle. L'accent a été mis sur une interface conviviale, intuitive et ludique, en accord avec le thème.</p><p><strong>Résultat:</strong> Une maquette mobile de haute fidélité qui démontre ma maîtrise du design UI (calques structurés, composants dynamiques) et ma capacité à concrétiser une identité de marque à travers un produit numérique.</p><img src=\"https://placehold.co/1200x800/AAAAAA/FFFFFF?text=Candy+Shop+Prototype+GIF\" alt=\"Candy Shop Prototype GIF\">"
+        "content": "<p><strong>Projet:</strong> Conception et prototypage complet d'une application mobile e-commerce pour une boutique de confiseries, réalisé sur <strong>Figma</strong>.</p><p><strong>Compétences Clés:</strong> J'ai géré l'intégralité du processus de design UI/UX, de la création de l'identité visuelle (logo, palette, icônes) à la réalisation d'un prototype interactif fidèle à l'expérience utilisateur réelle. L'accent a été mis sur une interface conviviale, intuitive et ludique, en accord avec le thème.</p><p><strong>Résultat:</strong> Une maquette mobile de haute fidélité qui démontre ma maîtrise du design UI (calques structurés, composants dynamiques) et ma capacité à concrétiser une identité de marque à travers un produit numérique.</p><img src=\"images/project/candy.gif\" alt=\"Candy Shop Prototype GIF\">"
     },
-    
+
+    { 
+        "id": "affiche-feu",
+        "category": "other-media",
+        "title": "Affiche Liens du feu", 
+        "image": "images/project/lienscover.png",
+        "summary": "Design Graphique & Photomanipulation - Photoshop & Lightroom",
+        "content": "<p><strong>Projet:</strong> Conception d'une affiche pour le court métrage catastrophe «Liens du Feu».</p><p><strong>Compétences Clés:</strong> J'ai utilisé <strong>Photoshop</strong> et <strong>Lightroom</strong> pour travailler la composition, la colorimétrie et l'ambiance dramatique. L'objectif était de retranscrire l'urgence et l'intensité émotionnelle du thème du feu par un design percutant.</p><p><strong>Résultat:</strong> Une affiche de cinéma immersive qui capte l'attention et illustre parfaitement la tension du sujet, validant mes compétences en retouche et composition graphique professionnelle.</p><img src=\"images/project/affiche_liens_du_feu.jpg\" alt=\"Affiche Liens du Feu\">"
+    },   
+
     { 
         "id": "motion-design-pw",
         "category": "other-media",
         "title": "Motion Design Petty Well", 
-        "image": "https://placehold.co/1200x800/777777/FFFFFF?text=Motion+Design+Petty+Well",
+        "image": "images/project/coverPW.png",
         "summary": "Publicité Animée - Reproduction After Effects",
         "content": "<p><strong>Projet:</strong> Exercice de reproduction d'une publicité existante pour la marque Petty Well.</p><p><strong>Compétences Clés:</strong> Maîtrise des techniques d'animation et de la charte graphique. J'ai utilisé <strong>After Effects</strong> pour recréer l'univers visuel de la marque, en adaptant le rythme et les transitions pour un message publicitaire dynamique.</p><p><strong>Résultat:</strong> Une animation qui valide ma capacité à respecter une direction artistique existante et à produire du contenu publicitaire de qualité professionnelle.</p><video controls><source src=\"images/project/PETTY_WELL_Sara_rejimand.mp4\" type=\"video/mp4\"></video>"
     },
@@ -60,39 +69,31 @@
         "id": "horreur-jv",
         "category": "other-media",
         "title": "L'Horreur dans le jeu vidéo", 
-        "image": "https://placehold.co/1200x800/888888/FFFFFF?text=Anna's+Log+Video",
+        "image": "images/project/coverAnna.png",
         "summary": "Documentaire, Captation & Montage Vidéo - DaVinci Resolve & Premiere Pro",
-        "content": "<p><strong>Projet:</strong> Réalisation d'un documentaire de groupe explorant la thématique de l'horreur dans les jeux vidéo, incluant des interviews avec des experts (game design, sound design).</p><p><strong>Rôle:</strong> J'ai géré la **captation vidéo**, le **montage final** (sur <strong>Adobe Premiere Pro et DaVinci Resolve</strong>) et la direction artistique (maquillage horrifique) pour créer l'ambiance. Le travail comprenait la gestion de matériel professionnel (caméras, micros spécialisés).</p><p><strong>Résultat:</strong> Une production vidéo immersive et inquiétante, démontrant mes compétences en production, post-production, et narration visuelle.</p><iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/6CxvEXCPvKw?si=vz_NfrcyryGR64RR\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+        "content": "<p><strong>Projet:</strong> Réalisation d'un documentaire de groupe explorant la thématique de l'horreur dans les jeux vidéo, incluant des interviews avec des experts (game design, sound design).</p><p><strong>Rôle:</strong> J'ai géré la captation vidéo, le montage final (sur <strong>Adobe Premiere Pro et DaVinci Resolve</strong>) et la direction artistique (maquillage horrifique) pour créer l'ambiance. Le travail comprenait la gestion de matériel professionnel (caméras, micros spécialisés).</p><p><strong>Résultat:</strong> Une production vidéo immersive et inquiétante, démontrant mes compétences en production, post-production, et narration visuelle.</p><div class=\"video-responsive-container\"><iframe src=\"https://www.youtube.com/embed/6CxvEXCPvKw?si=vz_NfrcyryGR64RR\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></div>"
     },
     { 
-        "id": "affiche-feu",
+        "id": "winkin-motion",
         "category": "other-media",
-        "title": "Affiche Liens du feu", 
-        "image": "https://placehold.co/1200x800/999999/FFFFFF?text=Liens+du+Feu+Poster",
-        "summary": "Design Graphique & Photomanipulation - Photoshop & Lightroom",
-        "content": "<p><strong>Projet:</strong> Conception d'une affiche pour le court métrage catastrophe «Liens du Feu».</p><p><strong>Compétences Clés:</strong> J'ai utilisé <strong>Photoshop</strong> et <strong>Lightroom</strong> pour travailler la composition, la colorimétrie et l'ambiance dramatique. L'objectif était de retranscrire l'urgence et l'intensité émotionnelle du thème du feu par un design percutant.</p><p><strong>Résultat:</strong> Une affiche de cinéma immersive qui capte l'attention et illustre parfaitement la tension du sujet, validant mes compétences en retouche et composition graphique professionnelle.</p><img src=\"https://placehold.co/1200x800/BBBBBB/FFFFFF?text=Affiche+Liens+du+Feu+Final\" alt=\"Affiche Liens du Feu\">"
+        "title": "La communication orchestrale", 
+        "image": "images/project/MDcover.png",
+        "summary": "Motion Design, After Effects, Illustrator - Vulgarisation Académique",
+        "content": "<p><strong>Défi:</strong> Vulgariser la théorie académique complexe de la communication orchestrale développée par Yves Winkin, en la transformant en une vidéo de Motion Design engageante et humoristique.</p><p><strong>Solution:</strong> J'ai géré l'intégralité de l'animation visuelle en utilisant **After Effects**, Illustrator et Premiere Pro. Pour désacraliser le sujet, j'ai intégré des éléments graphiques dynamiques et ludiques, incluant des références culturelles populaires comme le mème Trollface, afin de rendre le concept accessible.</p><p><strong>Résultat:</strong> Le projet a permis de transformer un concept académique en une narration visuelle efficace. Ce travail a renforcé mes compétences en design animé, en montage vidéo et a validé une approche créative de la communication pédagogique.</p><video controls><source src=\"videos/MD.mp4\" type=\"video/mp4\"></video>"
     },
     { 
         "id": "photographie-packshot",
         "category": "other-media",
         "title": "Photographie Packshot", 
-        "image": "https://placehold.co/1200x800/AAAAAA/FFFFFF?text=Photographie+Packshot",
+        "image": "images/project/vin (3).jpg",
         "summary": "Packshot Produit & Retouche Photo - Direction Artistique",
-        "content": "<p><strong>Projet:</strong> Collaboration avec une vinothèque bordelaise pour réaliser un shooting packshot d'une bouteille de vin.</p><p><strong>Rôle:</strong> Co-gestion de la direction artistique (thème, décor, palette de couleurs automnale) et **retouche photo** professionnelle avec <strong>Adobe Lightroom</strong>. Chaque détail a été soigné pour un rendu commercial.</p><p><strong>Résultat:</strong> Des visuels de produit de haute qualité qui répondent à un brief client réel, démontrant mes compétences en photographie studio, direction artistique, et post-traitement commercial.</p><img src=\"https://placehold.co/1200x800/CCCCCC/FFFFFF?text=Packshot+Photo+1\" alt=\"Photographie Packshot 1\"><img src=\"https://placehold.co/1200x800/DDDDDD/FFFFFF?text=Packshot+Photo+2\" alt=\"Photographie Packshot 2\">"
-    },
-    { 
-        "id": "motion-cuvee",
-        "category": "other-media",
-        "title": "Motion Design Cuvée Privée", 
-        "image": "https://placehold.co/1200x800/EFEFEF/111111?text=Cuv%C3%A9e+Priv%C3%A9e",
-        "summary": "Publicité Animée - Exercice Créatif After Effects",
-        "content": "<p><strong>Projet:</strong> Création d'une vidéo de motion design publicitaire, inspirée d'une campagne existante pour l'huile d'olive Cuvée Privée.</p><p><strong>Compétences Clés:</strong> Réalisation complète de l'animation sur <strong>After Effects</strong>. Le travail a consisté à repenser le rythme, la composition visuelle, et l'animation pour promouvoir le produit de manière engageante, tout en respectant strictement la charte graphique de la marque.</p><p><strong>Résultat:</strong> Une publicité animée créative et professionnelle qui valide ma capacité à raconter une histoire de marque en mouvement.</p><video controls><source src=\"images/project/CUVEE_PRIVEE_Sara_rejimand.mp4\" type=\"video/mp4\"></video>"
+        "content": "<p><strong>Projet:</strong> Collaboration avec une vinothèque bordelaise pour réaliser un shooting packshot d'une bouteille de vin.</p><p><strong>Rôle:</strong> Co-gestion de la direction artistique (thème, décor, palette de couleurs automnale) et retouche photo professionnelle avec <strong>Adobe Lightroom</strong>. Chaque détail a été soigné pour un rendu commercial.</p><p><strong>Résultat:</strong> Des visuels de produit de haute qualité qui répondent à un brief client réel, démontrant mes compétences en photographie studio, direction artistique, et post-traitement commercial.</p><img src=\"images/project/vin (3).jpg\" alt=\"Photographie Packshot 1\"><img src=\"images/project/vin (1).jpg\" alt=\"Photographie Packshot 2\"><img src=\"images/project/vin (2).jpg\" alt=\"Photographie Packshot 3\">"
     },
     { 
         "id": "poster-scientifique",
         "category": "other-media",
         "title": "Poster Scientifique", 
-        "image": "https://placehold.co/1200x800/1E1E1E/CCCCCC?text=Poster+Fact-Checking",
+        "image": "images/project/postercover.png",
         "summary": "Visualisation de Données & Design Pédagogique - Illustrator",
         "content": "<p><strong>Projet:</strong> Conception d'un poster scientifique explorant les enjeux du fact-checking et de la désinformation.</p><p><strong>Compétences Clés:</strong> J'ai utilisé <strong>Adobe Illustrator</strong> pour combiner la recherche académique avec un design visuel clair et accessible. Le défi était de simplifier des concepts complexes (outils de vérification, conséquences sociales) dans un format visuel unique, lisible et attrayant.</p><p><strong>Résultat:</strong> Un outil pédagogique efficace, démontrant ma capacité à transformer des données complexes en une communication visuelle percutante.</p><img src=\"images/project/poster.jpg\" alt=\"Poster Scientifique\">"
     }
