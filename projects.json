@@ -2,6 +2,7 @@
     { 
         "id": "bordeaux-visages",
         "category": "dev-ui-ux",
+        "scope": "university",
         "title": "Bordeaux Visages", 
         "image": "images/project/BVCover.png",
         "summary": "Développement Front-End, SCSS, HTML - Narratif & Responsive",
@@ -10,6 +11,7 @@
     { 
         "id": "capc-redesign",
         "category": "dev-ui-ux",
+        "scope": "university",
         "title": "CAPC Refonte", 
         "image": "images/project/CAPC-cover.png",
         "summary": "Refonte UI/UX, JavaScript, HTML/CSS - Optimisation de l'Expérience Utilisateur",
@@ -18,6 +20,7 @@
     { 
         "id": "celestia-legends",
         "category": "dev-ui-ux",
+        "scope": "personal",
         "title": "Celestia Legends", 
         "image": "images/project/celestiacover.png",
         "summary": "Projet Personnel React - Exploration des Composants Dynamiques",
@@ -26,14 +29,16 @@
     { 
         "id": "parfumerie-jinx",
         "category": "dev-ui-ux",
+        "scope": "personal",
         "title": "Parfumerie Jinx", 
         "image": "images/project/jinxcover.png",
-        "summary": "Site E-commerce Complet - HTML, CSS, JavaScript, Design UI/UX",
+        "summary": "Site E-commerce - HTML, CSS, JavaScript, Design UI/UX",
         "content": "<p><strong>Défi:</strong> Concevoir et développer une boutique en ligne moderne, de l'identité visuelle à l'intégration front-end.</p><p><strong>Solution:</strong> J'ai développé l'intégralité du site avec <strong>HTML, CSS et JavaScript</strong>. Le processus a inclus la création du design visuel complet (affiches, éléments graphiques) et le développement d'une interface e-commerce fonctionnelle : navigation par catégorie, fiches produits claires et gestion d'un panier simple.</p><p><strong>Résultat:</strong> Un site e-commerce esthétiquement soigné, fluide et intuitif, démontrant mes compétences en développement front-end et ma capacité à livrer des interfaces dynamiques et fonctionnelles, prêtes pour le monde professionnel.</p><img src=\"images/project/jinx.gif\" alt=\"Jinx GIF\"><img src=\"images/project/jinx2.png\" alt=\"Jinx Screenshot 1\">"
     },
     { 
         "id": "handilink",
         "category": "dev-ui-ux",
+        "scope": "university",
         "title": "Handilink", 
         "image": "images/project/HandilinkCover.png",
         "summary": "Projet CMS Osuny - Structuration de Contenu Pédagogique",
@@ -42,6 +47,7 @@
     { 
         "id": "candy-shop",
         "category": "dev-ui-ux",
+        "scope": "personal",
         "title": "Candy Shop", 
         "image": "images/project/candycover.png",
         "summary": "Prototypage Mobile Figma - Design UI/UX Complet",
@@ -51,6 +57,7 @@
     { 
         "id": "affiche-feu",
         "category": "other-media",
+        "scope": "university",
         "title": "Affiche Liens du feu", 
         "image": "images/project/lienscover.png",
         "summary": "Design Graphique & Photomanipulation - Photoshop & Lightroom",
@@ -60,6 +67,7 @@
     { 
         "id": "motion-design-pw",
         "category": "other-media",
+        "scope": "personal",
         "title": "Motion Design Petty Well", 
         "image": "images/project/coverPW.png",
         "summary": "Publicité Animée - Reproduction After Effects",
@@ -68,6 +76,7 @@
     { 
         "id": "horreur-jv",
         "category": "other-media",
+        "scope": "university",
         "title": "L'Horreur dans le jeu vidéo", 
         "image": "images/project/coverAnna.png",
         "summary": "Documentaire, Captation & Montage Vidéo - DaVinci Resolve & Premiere Pro",
@@ -76,15 +85,17 @@
     { 
         "id": "winkin-motion",
         "category": "other-media",
+        "scope": "university",
         "title": "La communication orchestrale", 
         "image": "images/project/MDcover.png",
         "summary": "Motion Design, After Effects, Illustrator - Vulgarisation Académique",
-        "content": "<p><strong>Défi:</strong> Vulgariser la théorie académique complexe de la communication orchestrale développée par Yves Winkin, en la transformant en une vidéo de Motion Design engageante et humoristique.</p><p><strong>Solution:</strong> J'ai géré l'intégralité de l'animation visuelle en utilisant **After Effects**, Illustrator et Premiere Pro. Pour désacraliser le sujet, j'ai intégré des éléments graphiques dynamiques et ludiques, incluant des références culturelles populaires comme le mème Trollface, afin de rendre le concept accessible.</p><p><strong>Résultat:</strong> Le projet a permis de transformer un concept académique en une narration visuelle efficace. Ce travail a renforcé mes compétences en design animé, en montage vidéo et a validé une approche créative de la communication pédagogique.</p><video controls><source src=\"videos/MD.mp4\" type=\"video/mp4\"></video>"
+        "content": "<p><strong>Défi:</strong> Vulgariser la théorie académique complexe de la communication orchestrale développée par Yves Winkin, en la transformant en une vidéo de Motion Design engageante et humoristique.</p><p><strong>Solution:</strong> J'ai géré l'intégralité de l'animation visuelle en utilisant After Effects, Illustrator et Premiere Pro. Pour désacraliser le sujet, j'ai intégré des éléments graphiques dynamiques et ludiques, incluant des références culturelles populaires comme le mème Trollface, afin de rendre le concept accessible.</p><p><strong>Résultat:</strong> Le projet a permis de transformer un concept académique en une narration visuelle efficace. Ce travail a renforcé mes compétences en design animé, en montage vidéo et a validé une approche créative de la communication pédagogique.</p><div class=\"video-responsive-container\"><video controls class=\"w-full h-full absolute inset-0\"><source src=\"images/project/MD.mp4\" type=\"video/mp4\"></video></div>"
     },
     { 
         "id": "photographie-packshot",
         "category": "other-media",
-        "title": "Photographie Packshot", 
+        "title": "Photographie Packshot",
+        "scope": "university", 
         "image": "images/project/vin (3).jpg",
         "summary": "Packshot Produit & Retouche Photo - Direction Artistique",
         "content": "<p><strong>Projet:</strong> Collaboration avec une vinothèque bordelaise pour réaliser un shooting packshot d'une bouteille de vin.</p><p><strong>Rôle:</strong> Co-gestion de la direction artistique (thème, décor, palette de couleurs automnale) et retouche photo professionnelle avec <strong>Adobe Lightroom</strong>. Chaque détail a été soigné pour un rendu commercial.</p><p><strong>Résultat:</strong> Des visuels de produit de haute qualité qui répondent à un brief client réel, démontrant mes compétences en photographie studio, direction artistique, et post-traitement commercial.</p><img src=\"images/project/vin (3).jpg\" alt=\"Photographie Packshot 1\"><img src=\"images/project/vin (1).jpg\" alt=\"Photographie Packshot 2\"><img src=\"images/project/vin (2).jpg\" alt=\"Photographie Packshot 3\">"
@@ -92,6 +103,7 @@
     { 
         "id": "poster-scientifique",
         "category": "other-media",
+        "scope": "university",
         "title": "Poster Scientifique", 
         "image": "images/project/postercover.png",
         "summary": "Visualisation de Données & Design Pédagogique - Illustrator",

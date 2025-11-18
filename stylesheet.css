@@ -6,6 +6,7 @@ body {
     overflow-x: hidden;
     transition: overflow-y 0.3s;
     background-color: #F2F0EF;
+    color:#F2F0EF ;
 }
 
 /* Scrollbar */
@@ -14,13 +15,15 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #111;
+    background: #000000;
 }
 
+
 ::-webkit-scrollbar-thumb {
-    background: #717896;
+    background: #626679;
     border-radius: 10px;
 }
+
 
 #projects ::-webkit-scrollbar-thumb {
     background: #939292;
@@ -30,21 +33,23 @@ body {
 }
 
 .text-white {
-    color: #F2F0EF !important;
+    color: #F2F0EF  ;
 }
 
 .border-white {
-    border-color: #F2F0EF !important;
+    border-color: #F2F0EF  ;
 }
 
 #mobile-menu-close {
-    color: #F2F0EF !important;
+    color: #F2F0EF  ;
 }
 
 #custom-cursor {
-    border-color: #F2F0EF !important;
+    border-color: #F2F0EF  ;
     mix-blend-mode: difference; 
 }
+
+
 
 /* Project Detail */
 .detail-content h3 {
@@ -99,11 +104,16 @@ h4.project-title {
     color: #c1c0c0;
     transition: color 0.3s;
 }
+
+#about{
+    background-color: #F2F0EF;
+
+}
 @media (max-width: 768px) {
     .md\:sticky {
-        position: relative !important;
-        height: auto !important;
-        overflow-y: visible !important;
+        position: relative  ;
+        height: auto  ;
+        overflow-y: visible  ;
     }
     .project-title {
         font-size: 1rem;
@@ -189,4 +199,13 @@ h4.project-title {
   position: relative;
   z-index: 1;
   color: #eaeaea;
+}
+
+.project-item {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.project-item:hover {
+    opacity: 1;
+    transform: translateX(35px);
 }

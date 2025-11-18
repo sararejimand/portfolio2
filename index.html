@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="bg-black text-white antialiased">
+<body class="bg-black antialiased">
 
     
     <canvas id="interactive-bg" class="fixed top-0 left-0 w-full h-full opacity-70"></canvas>
@@ -28,7 +28,7 @@
 </div>
 
 
-    <header class="fixed top-0 left-0 w-full p-6 md:p-10 z-50">
+    <header class="fixed top-0 left-0 w-full p-6 md:p-10 z-50 mix-blend-difference">
         <nav class="flex justify-between items-center">
             <h1 class="text-xl font-extrabold tracking-widest uppercase">SARA R.</h1>
             <div class="hidden md:flex space-x-8 text-lg font-medium">
@@ -53,15 +53,18 @@
     <main id="main-content" class="relative page-content min-h-screen">
         
         <section id="hero" class="h-screen flex flex-col justify-center items-start p-6 md:p-20 relative">
-            <p class="text-lg md:text-xl font-light mb-4 text-zinc-400 opacity-0" id="hero-subtitle">
-                Développeuse Front-End & UI/UX Designer basée à Bordeaux.
-            </p>
+
             <div class="overflow-hidden">
-                <h2 id="hero-title" class="text-7xl md:text-9xl font-extrabold uppercase leading-none text-white transition duration-500 opacity-0 transform translate-y-full">
+                <h2 id="hero-title" class="text-7xl md:text-9xl font-extrabold uppercase leading-none  transition duration-500 opacity-0 transform translate-y-full">
                     SARA<br>
                     REJIMAND
                 </h2>
             </div>
+
+            <p class="text-lg md:text-3xl font-light mb-4 text-zinc-400 opacity-0" id="hero-subtitle">
+                Développeuse Front-End & UI/UX Designer basée à Bordeaux.
+            </p>
+
             <a href="#projects" class="mt-12 text-lg font-medium border-b border-white hover:text-zinc-400 transition duration-300 opacity-0" id="hero-cta">
                 Voir les Projets &darr;
             </a>
@@ -70,27 +73,20 @@
 
         <section id="projects" class="min-h-screen py-16 md:py-24 relative flex flex-col md:flex-row">
             
-
-            <div class="md:w-1/2 w-full px-6 md:px-20 md:sticky md:top-0 md:h-screen md:overflow-y-auto">
-                <h3 class="text-5xl md:text-6xl font-extrabold uppercase mb-12 border-b border-white pb-4">Projets</h3>
+            <div class="md:w-1/2 w-full px-6 md:px-20 md:sticky md:top-0  md:overflow-y-auto">
+                
                 
                 <div id="project-list" class="space-y-12">
+                    <h3 class="text-5xl md:text-6xl font-extrabold uppercase mb-12 border-b border-white pb-4">Projets<br> Universitaires</h3>
+
+                    <div id="university-projects-list" class="space-y-20">
+                        </div>
+
+                    <h3 class="text-5xl md:text-6xl font-extrabold uppercase mb-12 border-b border-white pb-4">Projets<br> Personnels</h3>
                     
-
-                    <h4 class="text-2xl font-extrabold uppercase mb-4 text-zinc-400 border-b border-gray-800 pb-2 pt-8">
-                        Développement & Design (UI/UX)
-                    </h4>
-                    <div id="dev-ui-ux-list" class="space-y-20">
-
-                    </div>
-
-                    <h4 class="text-2xl font-extrabold uppercase mb-4 text-zinc-400 border-b border-gray-800 pb-2 pt-16">
-                        Autres Projets (Graphisme, Motion, Video)
-                    </h4>
-                    <div id="other-media-list" class="space-y-20">
-                    </div>
+                    <div id="personal-projects-list" class="space-y-20">
+                        </div>
                     
-                    <div class="h-[50vh]"></div> 
                 </div>
             </div>
 

@@ -25,26 +25,38 @@ function openProjectDetail(id) {
 // Function to close the detail screen
 function closeProjectDetail() {
     const detailScreen = document.getElementById('project-detail-screen');
-    
+    const detailBody = document.getElementById('detail-body'); 
+
+    detailBody.querySelectorAll('video').forEach(video => {
+        video.pause();
+        video.currentTime = 0; 
+    });
+
+    detailBody.querySelectorAll('iframe').forEach(iframe => {
+        if (iframe.src) {
+            iframe.src = iframe.src; 
+        }
+    });
+
     gsap.to(detailScreen, { 
         x: '100%', 
         duration: 0.6, 
         ease: "power3.inOut", 
         onComplete: () => {
-            document.body.style.overflowY = 'auto'; 
+            document.body.style.overflowY = 'auto';
         } 
     });
 }
 
+// Function to render the project list
 function renderProjectList() {
-    const devUiUxList = document.getElementById('dev-ui-ux-list');
-    const otherMediaList = document.getElementById('other-media-list');
+    const universityList = document.getElementById('university-projects-list');
+    const personalList = document.getElementById('personal-projects-list');
+    universityList.innerHTML = '';
+    personalList.innerHTML = '';
     
-    devUiUxList.innerHTML = '';
-    otherMediaList.innerHTML = '';
-    
-    const devFragment = document.createDocumentFragment();
-    const otherFragment = document.createDocumentFragment();
+    const universityFragment = document.createDocumentFragment();
+    const personalFragment = document.createDocumentFragment();
     
     PROJECTS.forEach((project, index) => {
         const item = document.createElement('div');
@@ -60,16 +72,16 @@ function renderProjectList() {
                 ${project.summary}
             </p>
         `;
-        
-        if (project.category === 'dev-ui-ux') {
-            devFragment.appendChild(item);
+
+        if (project.scope === 'university') {
+            universityFragment.appendChild(item);
         } else {
-            otherFragment.appendChild(item);
+            personalFragment.appendChild(item);
         }
     });
 
-    devUiUxList.appendChild(devFragment);
-    otherMediaList.appendChild(otherFragment);
+    universityList.appendChild(universityFragment);
+    personalList.appendChild(personalFragment);
 }
 
 
