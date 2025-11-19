@@ -109,6 +109,7 @@ h4.project-title {
     background-color: #F2F0EF;
 
 }
+
 @media (max-width: 768px) {
     .md\:sticky {
         position: relative  ;
@@ -128,9 +129,44 @@ h4.project-title {
     #custom-cursor {
         display: none;
     }
+    #hero h2{
+        font-size: 34px;
+    }
+    #projects h3{
+        font-size:30px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+    #about h3,h4{
+        font-size:30px;
+    }
+    #contact h3{
+        font-size:28px;
+    }
+    #projects h4{
+        font-size:26px;
+    }
+    #about p{
+        font-size:18px;
+    }
+    #contact a{
+        font-size:16px;
+    }
+    nav{
+        width: 95%;
+    }
+    #projects .project-item{
+        margin-top: 6px;
+    }
+    #project-preview-container{
+        display: none;
+    }
+    #university-projects-list,#personal-projects-list{
+        margin-top: 2px;
+    }
+
 }
-
-
 
 /* Background animation and project hover animation */
 .tf-bg {
