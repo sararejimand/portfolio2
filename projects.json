@@ -51,7 +51,7 @@
         "title": "Candy Shop", 
         "image": "images/project/candycover.png",
         "summary": "Prototypage Mobile Figma - Design UI/UX Complet",
-        "content": "<p><strong>Projet:</strong> Conception et prototypage complet d'une application mobile e-commerce pour une boutique de confiseries, réalisé sur <strong>Figma</strong>.</p><p><strong>Compétences Clés:</strong> J'ai géré l'intégralité du processus de design UI/UX, de la création de l'identité visuelle (logo, palette, icônes) à la réalisation d'un prototype interactif fidèle à l'expérience utilisateur réelle. L'accent a été mis sur une interface conviviale, intuitive et ludique, en accord avec le thème.</p><p><strong>Résultat:</strong> Une maquette mobile de haute fidélité qui démontre ma maîtrise du design UI (calques structurés, composants dynamiques) et ma capacité à concrétiser une identité de marque à travers un produit numérique.</p><img src=\"images/project/candy.gif\" alt=\"Candy Shop Prototype GIF\">"
+        "content": "<p><strong>Projet:</strong> Conception et prototypage complet d'une application mobile e-commerce pour une boutique de confiseries, réalisé sur <strong>Figma</strong>.</p><p><strong>Compétences Clés:</strong> J'ai géré l'intégralité du processus de design UI/UX, de la création de l'identité visuelle (logo, palette, icônes) à la réalisation d'un prototype interactif fidèle à l'expérience utilisateur réelle. L'accent a été mis sur une interface conviviale, intuitive et ludique, en accord avec le thème.</p><p><strong>Résultat:</strong> Une maquette mobile de haute fidélité qui démontre ma maîtrise du design UI (calques structurés, composants dynamiques) et ma capacité à concrétiser une identité de marque à travers un produit numérique.</p><img src=\"images/project/candy.gif\" alt=\"Candy Shop Prototype GIF\"style=\"width: 50%; margin: 0 auto; display: block;\">"
     },
 
     { 
@@ -71,7 +71,7 @@
         "title": "Motion Design Petty Well", 
         "image": "images/project/coverPW.png",
         "summary": "Publicité Animée - Reproduction After Effects",
-        "content": "<p><strong>Projet:</strong> Exercice de reproduction d'une publicité existante pour la marque Petty Well.</p><p><strong>Compétences Clés:</strong> Maîtrise des techniques d'animation et de la charte graphique. J'ai utilisé <strong>After Effects</strong> pour recréer l'univers visuel de la marque, en adaptant le rythme et les transitions pour un message publicitaire dynamique.</p><p><strong>Résultat:</strong> Une animation qui valide ma capacité à respecter une direction artistique existante et à produire du contenu publicitaire de qualité professionnelle.</p><video controls><source src=\"images/project/PETTY_WELL_Sara_rejimand.mp4\" type=\"video/mp4\"></video>"
+        "content": "<p><strong>Projet:</strong> Exercice de reproduction d'une publicité existante pour la marque Petty Well.</p><p><strong>Compétences Clés:</strong> Maîtrise des techniques d'animation et de la charte graphique. J'ai utilisé <strong>After Effects</strong> pour recréer l'univers visuel de la marque, en adaptant le rythme et les transitions pour un message publicitaire dynamique.</p><p><strong>Résultat:</strong> Une animation qui valide ma capacité à respecter une direction artistique existante et à produire du contenu publicitaire de qualité professionnelle.</p><video controls style=\"width: 50%; margin: 0 auto;\"><source src=\"images/project/PETTY_WELL_Sara_rejimand.mp4\" type=\"video/mp4\"></video>"
     },
     { 
         "id": "horreur-jv",

@@ -130,12 +130,15 @@ h4.project-title {
     }
 }
 
+
+
+/* Background animation and project hover animation */
 .tf-bg {
   position: fixed;
   inset: 0;
   overflow: hidden;
   z-index: -1; 
-  background: linear-gradient(180deg, #0b0b0b 0%, #111 40%, #0d0d0d 100%);
+  background: linear-gradient(180deg, #0b0b0b 0%, #111111 40%, #0d0d0d 100%);
 }
 
 #tf-noise {
