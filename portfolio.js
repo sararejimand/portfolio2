@@ -40,8 +40,9 @@ function closeProjectDetail() {
 
     gsap.to(detailScreen, { 
         x: '100%', 
-        duration: 0.6, 
-        ease: "power3.inOut", 
+        duration: 0.5, 
+        force3D: true,
+        ease: "power2.inOut", 
         onComplete: () => {
             document.body.style.overflowY = 'auto';
         } 
@@ -176,9 +177,11 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.to("#hero-title", { 
         y: 0, 
         opacity: 1, 
-        duration: 1.5, 
-        delay: 0.8, 
-        ease: "power3.out" 
+        duration: 1, 
+        delay: 0.4, 
+        ease: "power2.out",
+
+        force3D: true 
     });
     gsap.to("#hero-cta", { opacity: 1, duration: 1, delay: 1.8 });
 
@@ -192,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.to(mobileMenu, { x: 0, duration: 0.5, ease: "power3.inOut" });
     });
     mobileMenuClose.addEventListener('click', () => {
-        gsap.to(mobileMenu, { x: "100%", duration: 0.5, ease: "power3.inOut" });
+        gsap.to(mobileMenu, { x: "100%", duration: 0.5, ease: "power3.inOut, force3D: true" });
     });
     mobileMenu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
