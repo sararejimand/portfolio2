@@ -1,4 +1,4 @@
-
+const isMobile = window.matchMedia("(max-width: 768px)").matches;
 let PROJECTS = []; 
 
 // Function to open the detail screen
@@ -16,8 +16,9 @@ function openProjectDetail(id) {
     
     gsap.to(detailScreen, { 
         x: '0%', 
-        duration: 0.6, 
-        ease: "power3.inOut" 
+        duration: isMobile ? 0.25 : 0.6, 
+        ease: "power3.inOut", 
+        force3D: true
     });
     detailScreen.scrollTo(0, 0);
 }
@@ -40,7 +41,7 @@ function closeProjectDetail() {
 
     gsap.to(detailScreen, { 
         x: '100%', 
-        duration: 0.5, 
+        duration: isMobile ? 0.25 : 0.5,
         force3D: true,
         ease: "power2.inOut", 
         onComplete: () => {
@@ -143,6 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
     // --- CURSOR ---
+   if (!isMobile) {
     const customCursor = document.getElementById('custom-cursor');
     let mouseX = 0, mouseY = 0;
     let cursorSize = 32;
@@ -171,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
             gsap.to(customCursor, { scale: 1, borderWidth: 2, duration: 0.3 });
         });
     });
-
+   }
     // --- Hero Section Animation ---
     gsap.to("#hero-subtitle", { opacity: 1, duration: 1.2, delay: 0.5, ease: "power2.out" });
     gsap.to("#hero-title", { 
